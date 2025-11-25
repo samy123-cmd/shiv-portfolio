@@ -4,12 +4,14 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import Typewriter from "@/components/ui/Typewriter";
+import EtlBackground from "@/components/hero/EtlBackground";
 
 export default function FashionHero() {
     return (
         <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-fashion-black text-fashion-white">
             {/* Abstract Background Elements */}
             <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
+                <EtlBackground />
                 <div className="absolute top-0 left-1/4 w-px h-full bg-fashion-gold/30" />
                 <div className="absolute top-0 right-1/4 w-px h-full bg-fashion-gold/30" />
                 <div className="absolute top-1/3 left-0 w-full h-px bg-fashion-gold/30" />

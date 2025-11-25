@@ -6,7 +6,10 @@
 .pnp.*
 .yarn/*
 !.yarn/patches
-!.yarn/plugins
+
+# User requested ignores
+*.txt
+*.log
 !.yarn/releases
 !.yarn/versions
 

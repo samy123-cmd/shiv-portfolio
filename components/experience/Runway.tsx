@@ -1,6 +1,7 @@
 import React from "react";
 import { experiences } from "@/data/experience";
 import { cn } from "@/lib/utils";
+import ExperienceVisual from "./ExperienceVisual";
 
 const Runway = () => {
     return (
@@ -65,8 +66,10 @@ const Runway = () => {
                                     </div>
                                 </div>
 
-                                {/* Empty space for the other side */}
-                                <div className="hidden md:block w-1/2" />
+                                {/* Visual Animation Side */}
+                                <div className="hidden md:flex w-1/2 items-center justify-center">
+                                    <ExperienceVisual experience={exp} />
+                                </div>
                             </div>
                         );
                     })}
