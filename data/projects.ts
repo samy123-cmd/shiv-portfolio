@@ -8,6 +8,7 @@ export type Project = {
     difficulty: "EASY" | "MEDIUM" | "HARD" | "LEGENDARY";
     xp: number;
     type: "MAIN QUEST" | "SIDE QUEST";
+    image?: string;
 };
 
 export const projects: Project[] = [
@@ -20,6 +21,7 @@ export const projects: Project[] = [
         difficulty: "HARD",
         xp: 5000,
         type: "MAIN QUEST",
+        image: "/images/project-1.png",
     },
     {
         id: "etl-pipeline",
@@ -29,6 +31,7 @@ export const projects: Project[] = [
         difficulty: "LEGENDARY",
         xp: 10000,
         type: "MAIN QUEST",
+        image: "/images/project-2.png",
     },
     {
         id: "anomaly-detection",
@@ -38,6 +41,7 @@ export const projects: Project[] = [
         difficulty: "MEDIUM",
         xp: 3500,
         type: "SIDE QUEST",
+        image: "/images/project-3.png",
     },
     {
         id: "kafka-stream",
@@ -47,5 +51,6 @@ export const projects: Project[] = [
         difficulty: "HARD",
         xp: 4500,
         type: "SIDE QUEST",
+        image: "/images/project-2.png",
     },
 ];

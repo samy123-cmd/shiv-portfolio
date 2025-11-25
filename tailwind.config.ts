@@ -9,19 +9,25 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                retro: {
-                    bg: "#1a1a2e", // Dark blue/purple background
-                    primary: "#e94560", // Neon red/pink
-                    secondary: "#0f3460", // Dark blue
-                    accent: "#16213e", // Darker blue
-                    text: "#eaeaea", // Off-white
-                    green: "#00ff41", // Terminal green
-                    yellow: "#f8e71c", // Arcade yellow
+                fashion: {
+                    black: "#000000", // Midnight Black
+                    white: "#FAF9F7", // Atelier Off-White
+                    gold: "#D4AF37", // Gold Thread
+                    charcoal: "#1A1A1A", // Charcoal
+                    grey: "#9A9A9A", // Muted Grey
                 },
             },
             fontFamily: {
-                pixel: ['var(--font-press-start-2p)', 'monospace'],
-                mono: ['var(--font-vt323)', 'monospace'],
+                serif: ['var(--font-cormorant)', 'serif'],
+                sans: ['var(--font-inter)', 'sans-serif'],
+            },
+            spacing: {
+                'xs': '8px',
+                'sm': '16px',
+                'md': '32px',
+                'lg': '64px',
+                'xl': '128px',
+                '2xl': '256px',
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

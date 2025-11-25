@@ -4,60 +4,52 @@
 
 @layer base {
   :root {
-    --background: 26 26 46;
-    --foreground: 234 234 234;
+    --background: 0 0% 0%;
+    --foreground: 40 10% 98%;
+  }
+
+  body {
+    @apply bg-fashion-black text-fashion-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
   }
 }
 
 @layer utilities {
-  .text-shadow-retro {
-    text-shadow: 2px 2px 0px #000000;
+  .text-balance {
+    text-wrap: balance;
   }
-  
-  .box-shadow-retro {
-    box-shadow: 4px 4px 0px #000000;
-  }
-}
 
-/* CRT Scanline Effect */
-.scanline {
-  width: 100%;
-  height: 100px;
-  z-index: 10;
-  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(0,0,0,0) 100%);
-  opacity: 0.1;
-  position: fixed;
-  bottom: 100%;
-  animation: scanline 10s linear infinite;
-  pointer-events: none;
-}
+  .luxury-border {
+    @apply border border-fashion-charcoal;
+  }
 
-@keyframes scanline {
-  0% {
-    bottom: 100%;
-  }
-  80% {
-    bottom: 100%;
-  }
-  100% {
-    bottom: -100px;
+  .luxury-text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-fashion-white via-fashion-grey to-fashion-white;
   }
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a2e; 
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e94560; 
-  border: 2px solid #1a1a2e;
+  background: #333333;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0f3460; 
+  background: #D4AF37;
 }
